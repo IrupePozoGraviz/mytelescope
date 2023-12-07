@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Home } from './pages/home';
+import { Product } from './pages/product';
+import { Pricing } from './pages/pricing';
+import { Cases } from './pages/cases';
+import { AboutUs } from './pages/aboutUs';
+import { Header } from './components/header';
+import { Footer } from './components/footer';
+import NotFoundPage from './components/pagenotfound';
 
-function App() {
+
+const ScrollToTop = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+};
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+      <ScrollToTop />
+      <div className="app-container" role="main"> {/* Lägg till roll "main" för huvudinnehåll */}
+          <Header role="banner" /> {/* Lägg till roll "banner" för sidhuvud */}
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home/>
 
-export default App;
+                </>
+              } />
+            <Route path="/product" element={<Product />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/cases" element={<Cases />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+          <Footer role="contentinfo" />
+      </div>
+    </Router>
+  )
+}
