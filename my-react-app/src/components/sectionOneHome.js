@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrialBtn } from '../components/trialBtn';
+import { TrialBtn } from './trialBtn';
 import Girl from '../images/girl.svg'
 import Star from '../images/stjärna.svg'
 import Computer from '../images/nyDator.webp'

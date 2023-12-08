@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import { Home } from './pages/home';
+import { Home } from './components/sectionOneHome';
+import { SectionTwo } from './components/sectionTwoHome'; 
 import { Product } from './pages/product';
 import { Pricing } from './pages/pricing';
 import { Cases } from './pages/cases';
@@ -31,6 +32,7 @@ export const App = () => {
               element={
                 <>
                   <Home/>
+                  <SectionTwo/>
 
                 </>
               } />

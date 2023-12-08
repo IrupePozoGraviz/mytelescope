@@ -11,8 +11,6 @@
 /* Base font styles and background */
 html,
 body {
-  display: flex;
-  flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -36,8 +34,6 @@ code {
   --primary-color: #2B2F2F;
   --secondary-color: #3D3C3C;
   --accent-color: white;
-  --third-color: #FEF6EB;
-  --background-color: #EDE7E3;
   --font-family-main: '', sans-serif;
   --font-family-special: 'Sedgwick Ave Display', cursive;
 }
