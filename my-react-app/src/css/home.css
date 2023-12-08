@@ -1,0 +1,52 @@
+.home-parent {
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* This centers items horizontally in the container */
+	height: 200vh;
+	padding: 1rem;
+  }
+  
+.home-hOne{
+	display: none;
+}
+.home-hTwo{
+	display: none;
+}
+.home-sibling{
+	display: none;
+}
+.home-mobile{
+	padding: 0rem 2rem 1rem 2rem;
+}
+.home-mobileP{
+	margin-bottom: 2rem;
+	padding: 0rem 2rem 1rem 2rem;
+}
+
+.home-button{
+	margin-bottom: 2rem;
+}
+.home-images{
+	display: none;
+
+}
+.home-computer-mobile{
+	display:flex;
+	flex-direction: column;
+}
+
+.home-mobile-text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem 2rem 1rem 2rem;
+}
+.home-mobile-four{
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+
+}
+.home-mobile-text p{
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+}

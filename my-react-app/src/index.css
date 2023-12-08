@@ -7,18 +7,16 @@
   box-sizing: border-box;
 }
 
-/* Box-sizing for all elements inside .services */
-.services *, .services *::before, .services *::after {
-  box-sizing: border-box;
-}
 
 /* Base font styles and background */
 html,
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #EDE7E3;
+  background-color: #E4E4E4;
 
 }
 html, body {
@@ -35,18 +33,18 @@ code {
 
 /* Root variables for easy theme management */
 :root {
-  --primary-color: #112541;
-  --secondary-color: #FF758F;
-  --accent-color: #FFD2D3;
+  --primary-color: #2B2F2F;
+  --secondary-color: #3D3C3C;
+  --accent-color: white;
   --third-color: #FEF6EB;
   --background-color: #EDE7E3;
-  --font-family-main: 'Montserrat', sans-serif;
+  --font-family-main: '', sans-serif;
   --font-family-special: 'Sedgwick Ave Display', cursive;
 }
 
 /* Heading and paragraph font styling */
-h1, h2, h3, h4, h5, h6, p, label {
-  font-family: 'Montserrat', sans-serif;
+h1, h2, h3, h4, h5, h6{
+  font-family: 'DM Serif Display', sans-serif;
 }
 
 /* Specific heading styles */
@@ -61,4 +59,25 @@ h2 {
 
 h3 {
   font-size: 3rem;
+}
+p{
+  font-family: 'Kaisei Decol', sans-serif;
+}
+
+button {
+  font-family: 'Koulen', sans-serif;
+  color:var(--secondary-color) ;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

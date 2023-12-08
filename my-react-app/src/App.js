@@ -36,8 +36,8 @@ export const App = () => {
               } />
             <Route path="/product" element={<Product />} />
             <Route path="/pricing" element={<Pricing />} />
-            <Route path="/cases" element={<Cases />} />
-            <Route path="/about" element={<AboutUs />} />
+            <Route path="/validated-cases" element={<Cases />} />
+            <Route path="/about-us" element={<AboutUs />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
           <Footer role="contentinfo" />

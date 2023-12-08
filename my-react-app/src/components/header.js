@@ -1,21 +1,17 @@
 import React from 'react';
 import logo from '../images/logo.webp';
+import { Navigate } from './nav';
+import '../css/header.css';
 
 export const Header = () => (
-  <div className="App">
-    <header className="App-header">
+  <div className="mainHeader">
+    <header className="header">
+      <section className="logo">
       <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+      </section>
+      <nav className="Navigate" aria-label="Main navigation">
+          <Navigate />
+        </nav>
     </header>
   </div>
 );
