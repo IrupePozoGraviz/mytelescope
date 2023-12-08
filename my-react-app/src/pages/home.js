@@ -30,15 +30,17 @@ Create your MyTelescope future index and monitor how you are creating an impact 
 
 <section className="home-biggerScreen">
   <div className="home-bigger-child">
+    <div className="home-title">
 <h2 className="home-hOne">Explore. Forecast.</h2> 
       <h3 className="home-hTwo">Track market trends.</h3>
+      </div>
       
 <article className="home-sibling">
         <p>
         Use MyTelescope AI-powered platform to generate trend dashboards for companies, brands, products, topics and insights for content creations with an impressive average accuracy of 83% by analyzing Share of Search data.
         </p>
       </article>
-      </div>
+</div>
       <div className="home-images">
 <img src={Girl} className="home-girl" alt="Girl with phone" />
 <img src={Star} className="home-star" alt="Star" />
