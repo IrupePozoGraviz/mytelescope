@@ -1,13 +1,64 @@
-body {
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kaisei+Decol&family=Koulen&display=swap');
+/* CSS Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Box-sizing for all elements inside .services */
+.services *, .services *::before, .services *::after {
+  box-sizing: border-box;
+}
+
+/* Base font styles and background */
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EDE7E3;
+
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Code font styling */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Root variables for easy theme management */
+:root {
+  --primary-color: #112541;
+  --secondary-color: #FF758F;
+  --accent-color: #FFD2D3;
+  --third-color: #FEF6EB;
+  --background-color: #EDE7E3;
+  --font-family-main: 'Montserrat', sans-serif;
+  --font-family-special: 'Sedgwick Ave Display', cursive;
+}
+
+/* Heading and paragraph font styling */
+h1, h2, h3, h4, h5, h6, p, label {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Specific heading styles */
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
 }
