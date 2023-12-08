@@ -6,15 +6,6 @@
 	padding: 1rem;
   }
   
-.home-hOne{
-	display: none;
-}
-.home-hTwo{
-	display: none;
-}
-.home-sibling{
-	display: none;
-}
 .home-mobile{
 	padding: 0rem 2rem 1rem 2rem;
 }
@@ -26,10 +17,7 @@
 .home-button{
 	margin-bottom: 2rem;
 }
-.home-images{
-	display: none;
 
-}
 .home-computer-mobile{
 	display:flex;
 	flex-direction: column;
@@ -50,3 +38,67 @@
 	margin-bottom: 1rem;
 	font-size: 1.2rem;
 }
+.home-biggerScreen{
+	display: none;
+}
+
+  
+/* Medium enheter (landskapsplattor, 768px och uppåt) */
+@media only screen and (min-width: 768px) {
+	/* Dölja element som inte ska visas */
+	.home-parent {
+		display: flex;
+		flex-direction: column;
+		align-items: center; /* This centers items horizontally in the container */
+		height: 200vh;
+		padding: 1rem;
+	  }
+	.home-mobile {
+	  display: none;
+	}
+	.home-biggerScreen {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  padding: 1rem;
+	}
+  
+	.home-hOne, 
+	.home-hTwo, 
+	.home-sibling {
+		z-index: 4;
+	}
+  
+  
+	.home-girl {
+		position: absolute;
+		width: 50%; /* Justera storlek efter behov */
+		top: 50%; /* Centrera vertikalt, justera efter behov */
+		left: 50%; /* Centrera horisontellt, justera efter behov */
+		transform: translate(-50%, -50%); /* Centrerar exakt */
+		z-index: 3; /* Överst */
+	}
+  
+	.home-star {
+		position: absolute;
+		width: 60%; /* Justera storlek efter behov */
+		top: 30%; /* Justera placering efter behov */
+		left: 50%; /* Centrera horisontellt, justera efter behov */
+		transform: translateX(-50%); /* Centrerar horisontellt */
+		z-index: 1; /* Bakom allt annat */
+		border: solid 1px black; /* För visning, ta bort eller ersätt efter behov */
+	  
+	}
+  
+  }
+  
+  
+  /* Stora enheter (bärbara datorer/desktops, 992px och uppåt) */
+  @media only screen and (min-width: 992px) {
+	/* Stilar här */
+  }
+  
+  /* Extra stora enheter (stora desktops, 1200px och uppåt) */
+  @media only screen and (min-width: 1200px) {
+	/* Stilar här */
+  }
+  
