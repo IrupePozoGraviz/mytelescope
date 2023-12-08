@@ -2,7 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 
-import '../css/notfound.css';
+import '../css/notFound.css';
 
 export const NotFoundPage = () => {
   const navigate = useNavigate();

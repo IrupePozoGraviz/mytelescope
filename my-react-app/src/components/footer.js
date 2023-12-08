@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../images/logo.webp';
 
 export const Footer = () => (
   <div className="App">

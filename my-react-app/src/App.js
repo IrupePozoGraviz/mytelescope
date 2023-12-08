@@ -7,7 +7,7 @@ import { Cases } from './pages/cases';
 import { AboutUs } from './pages/aboutUs';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
-import NotFoundPage from './components/pagenotfound';
+import { NotFoundPage } from './pages/pagenotfound';
 
 
 const ScrollToTop = () => {
