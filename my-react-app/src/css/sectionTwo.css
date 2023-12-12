@@ -5,6 +5,7 @@
 	width: 100%;
 	margin-top: 2rem;
 	padding: 1rem 1rem 1rem 1rem;
+	display: none;
 }
 .sectionTwoHome-child{
 	display: flex;
@@ -14,4 +15,38 @@
 	padding: 1rem 1rem 1rem 1rem;
 }
 
+@media only screen and (min-width: 820px) {
+	.SectionTwoHome-Parent {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		width: 100%;
+		margin-top: 2rem;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	}
+	  
+	  @media only screen and (min-width: 1024px) {
+		.SectionTwoHome-Parent {
+			display: flex;
+			flex-direction: column;
+			height: auto;
+			width: 100%;
+			margin-top: 2rem;
+			padding: 1rem 1rem 1rem 1rem;
+		}
+	  }
+	  
+	  /* Extra stora enheter (stora desktops, 1200px och uppåt) */
+	  @media only screen and (min-width: 1200px) {
+		.SectionTwoHome-Parent {
+			display: flex;
+			flex-direction: column;
+			height: auto;
+			width: 100%;
+			margin-top: 2rem;
+			padding: 1rem 1rem 1rem 1rem;
+		}
+	  }
+	  
   

@@ -1,0 +1,83 @@
+.SectionThreeHome-Parent{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	height:auto;
+	margin-top: 8rem;
+}
+.sectionThreeHome-Anders{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	width:90%;
+	height:auto;
+	background-color: white;
+	position: relative;
+}
+.sectionThreeHome-Anders-img{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: -40%;
+	width: 100%;
+}
+.sectionThreeHome-Anders-text{
+	padding: 4rem 1rem 2rem 1rem;
+}
+.sectionThreeHome-Anders-name h3{
+	font-size: 1rem;
+	font-weight: bold;
+	padding-bottom: 2rem;
+}
+
+.sectionThreeBtn{
+	margin: 2rem 0 2rem 0;
+}
+
+.sectionThreeHome-child{
+	display:none;
+}
+
+/* Medium enheter (landskapsplattor, 768px och uppåt) */
+@media only screen and (min-width: 768px) {
+
+.sectionThreeHome-Anders-img{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: -40%;
+	width: 100%;
+}
+.sectionThreeHome-Anders-text{
+	padding: 5rem 2rem 2rem 2rem;
+}
+.sectionThreeHome-Anders-text p{
+	font-size: 1.2rem;
+}
+.sectionThreeHome-Anders-name h3{
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-bottom: 2rem;
+}
+}
+
+@media only screen and (min-width: 820px) {
+	
+	}
+	  
+	  @media only screen and (min-width: 1024px) {
+		
+
+	  }
+	  
+	  /* Extra stora enheter (stora desktops, 1200px och uppåt) */
+	  @media only screen and (min-width: 1200px) {
+		
+		
+	  }
+	  

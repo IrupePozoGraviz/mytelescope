@@ -2,13 +2,13 @@ import React from 'react';
 import { TrialBtn } from './trialBtn';
 import Girl from '../images/girl.svg'
 import Star from '../images/stjärna.svg'
-import Computer from '../images/nyDator.webp'
+import Computer from '../images/nyDator.png'
 import '../css/home.css';
 
-export const Home = () => (
+export const SectionOne = () => (
   <main className="home-parent">
     <section className="home-mobile">
-<h1 className="home-mobile">Forecast the future</h1>
+<h1>Forecast the future</h1>
       <article className="home-mobileP">
         <p>
         Get an instant overview of current demand and forecast where it’s heading.
@@ -50,6 +50,17 @@ Create your MyTelescope future index and monitor how you are creating an impact 
     <div className="home-button">
     <TrialBtn />
     </div>
+    <section className="home-biggerScreenIpad">
+    <div className="home-computer-ipad">
+    <img src={Computer} className="home-compIpad" alt="Computer" />
+    </div>
+    <article className="home-mobile-textIpad">
+      <h4 className="home-mobile-fourIpad">Turning branded Search signals into demand indicators</h4>
+        <p>
+        There's an average correlation of 83% between Share of Search methodology with sales, revenue, and market share. It means using branded search data as a data set replacing that when there's a surge in searches, there's a corresponding increase in the number of people purchasing the product - Look for the trend line
+        </p>
+        </article>
+    </section>
     
   </main>
 );

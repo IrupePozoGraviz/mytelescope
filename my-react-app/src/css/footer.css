@@ -1,0 +1,67 @@
+.footerGrid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	overflow: hidden; /* Detta döljer delar som går utanför containern */
+	background-color: var(--primary-color);
+	padding: 1.2rem 1rem;
+  }
+  
+  /* Se till att både .contact och .menuFooter tar upp lika mycket utrymme */
+  .contact, .menuFooter {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Centrerar innehållet vertikalt */
+	align-items: center; /* Centrerar innehållet horisontellt */
+  }
+  
+  .contact p, .menuFooter a {
+	color: var(--accent-color);
+	font-weight: bold;
+	font-size: 1rem; /* Ökar textstorleken för bättre läsbarhet */
+  }
+  
+  /* Lägger till en fokusindikator för länkar */
+  .menuFooter a:focus {
+	outline: 2px solid var(--secondary-color); /* Tydlig fokusindikator */
+  }
+  
+  /* Hover-effekt för länkar */
+  .menuFooter a:hover {
+	color: var(--secondary-color);
+  }
+
+  .mail p {
+	padding: 0.5rem;
+  }
+  
+  .social a {
+	margin: 0 1rem; /* Justera marginalen vid behov */
+  }
+  
+  .social-icon {
+	width: 40px; /* Öka storleken på ikonerna för bättre tillgänglighet */
+	height: auto; /* Behåller bildförhållandet */
+  }
+  
+  .menuFooter nav ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 1rem 1rem 1.7rem 1rem;
+	margin: 0;
+	gap: 10px; /* Skapar utrymme mellan objekten */
+  }
+  
+  /* Responsiv design */
+  @media screen and (max-width: 768px) {
+	.footerGrid {
+	  flex-direction: row; /* Byter till kolumnlayout på mindre skärmar */
+	}
+  
+	.contact, .menuFooter {
+	  align-items: flex-start; /* Justerar innehållet till vänster */
+	}
+  }
