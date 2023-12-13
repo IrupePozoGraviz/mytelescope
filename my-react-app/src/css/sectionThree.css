@@ -67,16 +67,70 @@
 }
 
 @media only screen and (min-width: 820px) {
-	
+.sectionThreeHome-child{
+	display:flex;
+	margin-top: 6rem;
+}
+.sectionThreeHome-Anders-img{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: -25%;
+	width: 100%;
+}
+.sectionThreeHome-Anders-text{
+	padding: 4rem 2rem 2rem 2rem;
+
+}
+.sectionThreeHome-Anders-text p{
+	font-size: 2rem;
+}
+.sectionThreeHome-Anders-name h3{
+	font-size: 2rem;
+}
+
 	}
 	  
-	  @media only screen and (min-width: 1024px) {
-		
+@media only screen and (min-width: 1024px) {
+.sectionThreeHome-flex{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+.sectionThreeHome-Anders{
+	display:flex;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content:flex-start;
+	width:100%;
+	height:auto;
+	background-color: white;
+	position: relative;
+}
+.sectionThreeHome-child{
+	display:block;
+
+}
+.sectionThreeHome-Anders-text{
+	padding: 0rem 0rem 0rem 0rem;
+
+}
+.sectionThreeHome-Anders-text p{
+	padding-top: 1.5rem;
+	font-size: 1.5rem;
+}
+.sectionThreeHome-Anders-name h3{
+	font-size: 2rem;
+}
+.sectionThree-dator{
+width: 100%;
+}
 
 	  }
 	  
-	  /* Extra stora enheter (stora desktops, 1200px och uppåt) */
-	  @media only screen and (min-width: 1200px) {
+/* Extra stora enheter (stora desktops, 1200px och uppåt) */
+@media only screen and (min-width: 1200px) {
 		
 		
 	  }

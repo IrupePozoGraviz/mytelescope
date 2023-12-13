@@ -1,5 +1,6 @@
 import React from 'react'
 // import { useNavigate } from 'react-router-dom'
+import '../css/trialBtn.css'
 
 export const TrialBtn = () => {
   /*const navigate = useNavigate()

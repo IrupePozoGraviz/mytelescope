@@ -3,10 +3,12 @@ import { TrialBtn } from './trialBtn';
 import Girl from '../images/girl.svg'
 import Star from '../images/stjärna.svg'
 import Computer from '../images/nyDator.png'
-import '../css/home.css';
+import '../css/sectionOne.css';
 
 export const SectionOne = () => (
   <main className="home-parent">
+
+{/* detta används Mobil*/}
     <section className="home-mobile">
 <h1>Forecast the future</h1>
       <article className="home-mobileP">
@@ -27,6 +29,8 @@ Create your MyTelescope future index and monitor how you are creating an impact 
         </p>
         </article>
     </section>
+
+{/* detta används from 820px och över*/}
 
 <section className="home-biggerScreen">
   <div className="home-bigger-child">
@@ -50,6 +54,8 @@ Create your MyTelescope future index and monitor how you are creating an impact 
     <div className="home-button">
     <TrialBtn />
     </div>
+
+    {/* detta används bara i mini I pad*/}
     <section className="home-biggerScreenIpad">
     <div className="home-computer-ipad">
     <img src={Computer} className="home-compIpad" alt="Computer" />

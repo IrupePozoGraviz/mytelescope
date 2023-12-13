@@ -60,20 +60,10 @@ p{
   font-family: 'Kaisei Decol', sans-serif;
 }
 
-button {
-  font-family: 'Koulen', sans-serif;
-  color:var(--secondary-color) ;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 15px;
-  padding: 10px 20px;
-  background-color: var(--accent-color);
-  box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, 0.15);
-
-}
 
 .app-container{
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }

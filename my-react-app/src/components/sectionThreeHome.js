@@ -1,12 +1,13 @@
 import React from 'react';
 import Anders from '../images/Anders.png'
-import Dator from '../images/nyDator.webp'
+import Dator from '../images/dataapparat.png'
 import { TrialBtn } from '../components/trialBtn';
 import '../css/sectionThree.css';
 
 export const SectionThree = () => {
 	return(
 <main className="SectionThreeHome-Parent">
+	<section className="sectionThreeHome-flex">
 	<section className="sectionThreeHome-Anders">
 	<div className="sectionThreeHome-Anders-img">
 	<img src={Anders} className="sectionThree-enter" alt="Anders from tv4" />
@@ -20,8 +21,9 @@ export const SectionThree = () => {
 	</div>
 	</section>
 <section className="sectionThreeHome-child">
-<img src={Dator} className="sectionThree-arrow" alt="Arrow" />
+<img src={Dator} className="sectionThree-dator" alt="Arrow" />
 
+</section>
 </section>
 <div className="sectionThreeBtn">
 <TrialBtn />

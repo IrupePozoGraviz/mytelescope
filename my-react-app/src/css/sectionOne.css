@@ -6,6 +6,7 @@
 	height: auto;
 	padding: 1rem;
 	overflow: hidden;
+	border:solid 1px black;
   }
   
 .home-mobile{
@@ -107,12 +108,11 @@
 	.home-button{
 		display: flex;
 		flex-direction: row;
-		margin-top: 1rem;
-		width: 100%;
-		margin-left:5rem ;
-
-
+		align-items: center;
+		justify-content: center;
+		width: 100%;;
 	}
+
 	.home-biggerScreenIpad{
 		margin-top: 5rem;
 		display:flex;
@@ -144,6 +144,20 @@
 .home-biggerScreenIpad{
 	display: none;
   }
+  .home-hOne{
+	font-size: 4rem;
+  }
+  .home-sibling{
+	font-size: 1.5rem;
+  }
+  .home-girl {
+	position: absolute;
+	width: 60%; /* Justera storlek efter behov */
+	top: 50%; /* Centrera vertikalt, justera efter behov */
+	left: 70%; /* Centrera horisontellt, justera efter behov */
+	overflow: hidden;
+  }
+
   .home-star {
 	position: absolute;
 	width: 80%; /* Justera storlek efter behov */
@@ -160,6 +174,15 @@
 	.home-biggerScreenIpad{
 		display: none;
 	  }
+	  .home-girl {
+		position: absolute;
+		width: 53%; /* Justera storlek efter behov */
+		top: 47%; /* Centrera vertikalt, justera efter behov */
+		left: 73%; /* Centrera horisontellt, justera efter behov */
+		transform: translate(-50%, -50%); /* Centrerar exakt */
+		z-index: 3; /* Överst */
+		overflow: hidden;
+	}
 	  .home-star {
 		position: absolute;
 		width: 80%; /* Justera storlek efter behov */
@@ -174,7 +197,25 @@
   
   /* Extra stora enheter (stora desktops, 1200px och uppåt) */
   @media only screen and (min-width: 1200px) {
-	.home-star {
+	.home-biggerScreen{
+		width: 100%;
+		margin: 2rem 0rem 2rem 0rem;
+
+	}
+	.home-bigger-child{
+		padding: 1rem 2rem 1rem 5rem;
+	}
+
+	  .home-girl {
+		position: absolute;
+		width: 50%; /* Justera storlek efter behov */
+		top: 70%; /* Centrera vertikalt, justera efter behov */
+		left: 75%; /* Centrera horisontellt, justera efter behov */
+		transform: translate(-50%, -50%); /* Centrerar exakt */
+		z-index: 3; /* Överst */
+		overflow: hidden;
+	}
+	  .home-star {
 		position: absolute;
 		width: 80%; /* Justera storlek efter behov */
 		top: 12%; /* Justera placering efter behov */
@@ -182,7 +223,16 @@
 		transform: translateX(-50%); /* Centrerar horisontellt */
 		z-index: 1; /* Bakom allt annat */
 		border: solid 1px black; /* För visning, ta bort eller ersätt efter behov */
+		overflow: hidden;
 	  
+	}
+	.home-button{
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		justify-content: start;
+		width: 100%;
+		margin-left: 13rem;
 	}
   }
   
