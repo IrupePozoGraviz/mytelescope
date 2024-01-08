@@ -6,6 +6,7 @@
 	width:100%;
 	height:auto;
 	margin-top: 8rem;
+	border:solid 1px green;
 }
 .sectionThreeHome-Anders{
 	display:flex;
@@ -16,6 +17,8 @@
 	height:auto;
 	background-color: white;
 	position: relative;
+	margin-left: 1.2rem;
+	margin-right: 1rem;
 }
 .sectionThreeHome-Anders-img{
 	display: flex;
@@ -44,7 +47,11 @@
 
 /* Medium enheter (landskapsplattor, 768px och uppåt) */
 @media only screen and (min-width: 768px) {
-
+.sectionThreeHome-flex{
+	display:flex;
+	justify-content: center;
+	padding: 0rem 1rem 0rem 1rem;
+}
 .sectionThreeHome-Anders-img{
 	display: flex;
 	flex-direction: column;
@@ -67,6 +74,12 @@
 }
 
 @media only screen and (min-width: 820px) {
+	.sectionThreeHome-flex{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0rem 1rem 0rem 1rem;
+	}	
 .sectionThreeHome-child{
 	display:flex;
 	margin-top: 6rem;
@@ -92,42 +105,73 @@
 
 	}
 	  
-@media only screen and (min-width: 1024px) {
-.sectionThreeHome-flex{
-	display:grid;
-	grid-template-columns: 1fr 1fr;
+	@media only screen and (min-width: 1024px) {
+		.SectionThreeHome-Parent {
+		  display: flex;
+		  flex-direction: column;
+		  height: auto;
+		  width: 100%;
+		  margin-top: 12rem;
+		  padding: 1rem 1rem 1rem 1rem;
+		}
+		.sectionThreeHome-flex {
+		  display: flex;
+		  flex-direction: row;
+		  
+		}
+		.sectionThreeHome-Anders {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: flex-start;
+		  justify-content: flex-start;
+		  width: 49%;
+		  height: 21rem;
+		  background-color: white;
+		  position: relative;
+		  z-index: -1;
+		  left: -25%;
+		  margin-top: 0.5rem;
+		}
+		.sectionThreeHome-Anders-img{
+		  position: absolute;
+		  top: -50%;
+		  left: 5%;
+		}
+		.sectionThreeHome-Anders-img img {
+		  width: 50%;
+		  height: auto; /* För att behålla bildens proportioner */
+		  z-index: 3;
+		  position: absolute;
+		}
+		.sectionThreeHome-Anders-text {
+		  padding: 0; /* Anpassa efter behov */
+		}
+		.sectionThreeHome-Anders-text p {
+		  padding: 3.3rem 1rem 1rem 1rem;
+		  font-size: 1.5rem;
+		  /* Stil för citatet */
+		}
+		.sectionThreeHome-Anders-name h3 {
+		  font-size: 1.3rem;
+		 padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+		}
+		.sectionThreeHome-child{
+			margin-top: 0rem;
+		}
+		.sectionThreeHome-child img {
+		  width: 60%;
+		  height: auto; /* För att behålla bildens proportioner */
+		  z-index: 3;
+		  left: 43%;
+		  position: absolute;
 
-}
-.sectionThreeHome-Anders{
-	display:flex;
-	flex-direction: column;
-	align-items:flex-start;
-	justify-content:flex-start;
-	width:100%;
-	height:auto;
-	background-color: white;
-	position: relative;
-}
-.sectionThreeHome-child{
-	display:block;
-
-}
-.sectionThreeHome-Anders-text{
-	padding: 0rem 0rem 0rem 0rem;
-
-}
-.sectionThreeHome-Anders-text p{
-	padding-top: 1.5rem;
-	font-size: 1.5rem;
-}
-.sectionThreeHome-Anders-name h3{
-	font-size: 2rem;
-}
-.sectionThree-dator{
-width: 100%;
-}
-
-	  }
+		}
+		.sectionThreeBtn button{
+			margin-top: 2rem;
+			width: 10rem;
+			font-size: 1.5rem;
+		}
+	}
 	  
 /* Extra stora enheter (stora desktops, 1200px och uppåt) */
 @media only screen and (min-width: 1200px) {

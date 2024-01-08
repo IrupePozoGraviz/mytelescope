@@ -10,6 +10,9 @@
   }
   
 .home-mobile{
+	padding: 0rem 1rem 1rem 1rem;
+}
+.home-mobile h1{
 	padding: 0rem 2rem 1rem 2rem;
 }
 .home-mobileP{
@@ -109,7 +112,8 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
+		margin-left: 1.5rem;
 		width: 100%;;
 	}
 
@@ -141,7 +145,10 @@
   
   }
   @media only screen and (min-width: 820px) {
-.home-biggerScreenIpad{
+.home-parent {
+	padding: 0rem 2rem -1rem 2rem;
+  }
+	.home-biggerScreenIpad{
 	display: none;
   }
   .home-hOne{
@@ -153,44 +160,60 @@
   .home-girl {
 	position: absolute;
 	width: 60%; /* Justera storlek efter behov */
-	top: 50%; /* Centrera vertikalt, justera efter behov */
+	top: 52%; /* Centrera vertikalt, justera efter behov */
 	left: 70%; /* Centrera horisontellt, justera efter behov */
 	overflow: hidden;
   }
 
   .home-star {
-	position: absolute;
-	width: 80%; /* Justera storlek efter behov */
-	top: 12%; /* Justera placering efter behov */
-	left: 65%; /* Centrera horisontellt, justera efter behov */
-	transform: translateX(-50%); /* Centrerar horisontellt */
-	z-index: 1; /* Bakom allt annat */
-	border: solid 1px black; /* För visning, ta bort eller ersätt efter behov */
-  
-}
+	display:none;
+  }
 }
   
   @media only screen and (min-width: 1024px) {
+	.home-parent {
+		display: flex;
+		flex-direction: column;
+		align-items: center; /* This centers items horizontally in the container */
+		padding: 1rem;
+		margin-top: 2rem;
+		width: 100%;
+		min-height: 800px;
+
+	  }
 	.home-biggerScreenIpad{
 		display: none;
 	  }
+	  .home-biggerScreen{
+		display: flex;
+		flex-direction: column;
+	  }
+	  .home-images{
+		display: flex;
+		flex-direction: row;
+		justify-content:center;
+		align-items: center;
+		height: 100%;
+	  }
 	  .home-girl {
-		position: absolute;
-		width: 53%; /* Justera storlek efter behov */
-		top: 47%; /* Centrera vertikalt, justera efter behov */
-		left: 73%; /* Centrera horisontellt, justera efter behov */
-		transform: translate(-50%, -50%); /* Centrerar exakt */
-		z-index: 3; /* Överst */
+		position:relative;
+		width: 62%; /* Justera storlek efter behov */
+		top: -50%;
+		left: 73%; 
+		transform: translate(-50%, -50%);
 		overflow: hidden;
+		z-index: 3; 
+		
 	}
 	  .home-star {
+		display:flex;
 		position: absolute;
 		width: 80%; /* Justera storlek efter behov */
-		top: 12%; /* Justera placering efter behov */
-		left: 65%; /* Centrera horisontellt, justera efter behov */
-		transform: translateX(-50%); /* Centrerar horisontellt */
+	top: 11%; 
+		left: 60%; 
+		transform: translateX(-50%); 
+		border: solid 1px black;
 		z-index: 1; /* Bakom allt annat */
-		border: solid 1px black; /* För visning, ta bort eller ersätt efter behov */
 	  
 	}
   }

@@ -11,13 +11,12 @@ export const SectionTwo = () => {
 	</div>
 <section className="sectionTwoHome-child">
 		<article className="sectionTwo-sister">
-			<p className="typesSisterP"><span className="type">1</span> Type in whatever you are qurious about</p>
+			<p className="typesSisterP"><span className="type">1</span>Type in whatever you are <span className="qurious">qurious about</span> </p>
 			<p className="typeTwoElectric">Are electric cars trending?</p>
 		</article>
 
 		<div className="sectionTwoHome-brother">
 			<p className="typeTwoP"><span className="type">2</span> Press Enter. That's it.</p>
-			<p className="typeTwoTrend">See the trend line</p>
 	
 	 <img src={Enter} className="sectionTwo-enter" alt="Enter" />
 	 <img src={Arrow} className="sectionTwo-arrow" alt="Arrow" />
