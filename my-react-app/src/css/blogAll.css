@@ -1,0 +1,39 @@
+.main-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.Head-Title{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 1rem 1rem 1rem;
+
+}
+
+.The-Blogs{
+    background-color: white;
+    height: auto;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 4px;
+}
+
+.Blog-Images{
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.BlogTitles{
+   padding: 1rem 2rem 1rem 2rem;
+
+}
+.post-titles{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
