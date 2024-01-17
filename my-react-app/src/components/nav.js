@@ -72,6 +72,7 @@ export const Navigate = () => {
           <li><NavLink to="/pricing" className={({ isActive }) => (isActive ? 'active' : '')}>Pricing</NavLink></li>
 		  <li><NavLink to="/validated-cases" className={({ isActive }) => (isActive ? 'active' : '')}>Validated cases</NavLink></li>
           <li><NavLink to="/about-us" className={({ isActive }) => (isActive ? 'active' : '')}>About us</NavLink></li>
+      <li><NavLink to="/blog" className={({ isActive }) => (isActive ? 'active' : '')}>Blog</NavLink></li>
         </ul>
       </nav>
     </header>

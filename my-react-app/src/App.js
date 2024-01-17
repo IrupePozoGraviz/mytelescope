@@ -8,6 +8,9 @@ import { AboutUs } from './pages/aboutUs';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { NotFoundPage } from './pages/pagenotfound';
+import { Blog } from './pages/blog.js';
+import { AllPosts } from './components/AllPosts.js';
+import { OnePost } from './components/OnePost.js'
 
 
 const ScrollToTop = () => {
@@ -38,6 +41,8 @@ export const App = () => {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/validated-cases" element={<Cases />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route component={AllPosts} path="/blog" element={<Blog />} />
+            <Route component={OnePost} path="/:slug" element={<Blog />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
           <Footer role="contentinfo" />
